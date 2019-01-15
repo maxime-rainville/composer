@@ -97,6 +97,8 @@ class Locker
         }
 
         ksort($relevantContent);
+        
+        var_dump($relevantContent);
 
         return md5(json_encode($relevantContent));
     }
